@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video></video></title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <hr>
+    <h2>Vídeos internos</h2> <!--consomem mais dados do seu site-->
+    <video poster="media/Captura de tela 2022-02-24 163741.png" width="300" controls loop> <!--controls(mostra controles) width=''(ajusta o tamanho do video no site, mas não reduz o tamanho do arquivo.) poster=''(thumb do video) também é possível gerar um loop.-->
+        <source src="media/Video-Pexels-webm.webm" type="video/webm">
+        <source src="media/Video-Pexels-m4v.m4v" type="video/m4v">
+        <source src="media/video-pexels-original.mp4" type="video/mp4">
+        <p>Seu navegador não suporta reproduzir vídeos.</p>
+    </video>
+    
+    <h2>Vídeos externos</h2>  <!--consomem menos dados do seu site-->
+    <p>vídeo do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eZZ9en34mOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <p>vídeo do vimeo</p>
+
+
+</body>
+</html>

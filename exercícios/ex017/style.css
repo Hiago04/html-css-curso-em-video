@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+h1,h2 {
+    text-align: center;
+}
+
+body {
+    /* font-family: Georgia, Times, 'Times New Roman', serif;  */
+    /* Medidas absolutas:(cm, mm, in, pt, px, pc) -> Modificam o tamanho padrão da fonte;
+    Medidas relativas:(em, ex, rem, vw, vh, %) -> São relativas ao tamanho padrão da fonte;
+    Use (em)*/
+    
+    /* font-size: 1.2em; */
+
+    /* font-weight: normal;  Peso da fonte:lighter, normal, bold, bolder. Você também pode usar valores de 100 ao 900 */
+    /* font-style:italic; */ /* Coloca a fonte em itálico */
+
+    /* text-decoration:underline; */ /* Deixa sublinhado */
+
+    /* shorthand -> encurta tags CSS por ex: */
+    font: italic bold 1.1em Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+    text-align: center;
+    font-size: 0.9em;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas e áudios</h1>
+    <p>Vão aparecer diferentes imagens dependendo 
+    do tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens-ex11/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens-ex11/foto-m.png" type="image/png">
+        <img src="imagens-ex11/foto-g.png" alt="foto grande"> <!--Geralmente quando o usuário precisa arrastar aquela barrinha pra ver o site ou uma imagem, ele sai do site rápido. E quanto menor o tempo dele dentro do site menos o google recomenda. -->
+    </picture>
+
+    <audio preload="metadata" autoplay controls loop> <!--metadata(carrega as informações do áudio, e só carrega o arquivo se o user der play), auto(carrega toda as informações do áudio junto com o site, deixando ele mais lento), none só carrega se o user der play--> <!--autoplay roda o áudio sozinho, sem dar play. Controls mostra um painel de controle. Loop roda o áudio em loop (sim, dá pra deixar um áudio de fundo, mas não é recomendado)-->
+        <source src="audio/Wooden Train Whistle.mp3" type="audio/mpeg">
+        <p>Desculpe não conseguimos exibir esse áudio. <a href="audio/Wooden Train Whistle.mp3">Clique aqui para baixar</a> </p>
+    </audio>
+
+</body>
+</html>
