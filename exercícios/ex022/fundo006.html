@@ -12,16 +12,32 @@
             background-repeat: no-repeat;
             background-position: center top;
             background-size: cover; /* Também existem os valores auto e contain */
+            background-attachment: fixed;
+            /* shorthand -> background: color -> image -> position -> repeat -> size -> attacment */
+            background: rgba(151, 151, 219, 0.774) url("image/wallpaper002.jpg") center top no-repeat cover fixed;
+            
+            padding-left: 10px;
+            padding-right: 10px;
             /* height: 100vh; */
         }
         main{
             background-color: rgb(214, 255, 255);
-            border-radius: 8px;
-            border: 3px solid rgba(4, 4, 99, 0.829);
-            width: 400px;
-            height: 1000px;
+            border-radius: 9px;
+            border: 1px solid rgba(0, 55, 235, 0.726);
+            max-width: 450px;
+            min-width: 150px;
+            height: 800px;
             margin: auto;
-            padding: 10px;
+            padding: 20px;
+        }
+        main h1{
+            text-align: center;
+            font-size: 2.1em;
+        }
+        main p{
+            font-size: 1.05em;
+            line-height: 1.5em;
+            text-align: justify;
         }
 
 
