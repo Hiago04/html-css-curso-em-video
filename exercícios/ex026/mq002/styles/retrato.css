@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Estilos para retrato (em pé) */
+
+body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: black;
+}
