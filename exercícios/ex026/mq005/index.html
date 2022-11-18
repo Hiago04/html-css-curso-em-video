@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/m-first.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    </header>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+        </ul>
+    </menu>
+    
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil voluptate ducimus pariatur aliquid nostrum illum distinctio error magnam, labore atque totam nesciunt provident esse. Perferendis totam hic cum similique? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt facere molestiae adipisci. Aliquam, laudantium saepe incidunt ab asperiores sunt corporis quam dignissimos minima similique dolor quisquam, eligendi nesciunt! Maxime.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil voluptate ducimus pariatur aliquid nostrum illum distinctio error magnam, labore atque totam nesciunt provident esse. Perferendis totam hic cum similique? Lorem ipsum dolor sit, amet consectetur.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil voluptate ducimus pariatur aliquid nostrum illum distinctio error magnam, labore atque totam nesciunt provident esse. Perferendis totam hic cum similique? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt facere molestiae adipisci. Aliquam, laudantium saepe incidunt ab asperiores sunt corporis quam dignissimos minima similique dolor quisquam, eligendi nesciunt! Maxime.</p>
+        </article>
+    </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) { /* window -> quando a largura da tela for maior ou igual que 768 */
+                itens.style.display = 'block' /* o estilo css do itens recebera o valor display block */
+            } else {
+                itens.style.display = 'none' /* se não, o estilo css dde itens recebera o valor display none */
+            }
+        }
+
+        function clickMenu(){
+        if(itens.style.display == 'block') { /* se o valor do display que esta no itens do css foi igual a 'block' */
+            itens.style.display = 'none' /* o estilo de itens receberá display 'none' */
+        } else {
+            itens.style.display = 'block' /* se não, o estilo de itens receberá display block */
+        }
+    }
+    </script>
+</body>
+</html>
