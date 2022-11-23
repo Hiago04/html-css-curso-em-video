@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* Paletas de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+ */
+
+ /* TYPICAL DEVICE BREAKPOINTS 
+
+Pequenas telas: até 600px;
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: a cima de 1200px */
+
+ * {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; /* A BORDA VAI FAZER PARTE DO TAMANHO */
+ }
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: #5f2c82;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* FAZ QUE O CONTEÚDO QUE ESTIVER DENTRO DA CAIXA PASSANDO PRA FORA DESAPAREÇA */
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease; /* suaviza o transition */
+}
+
+div#imagem {
+    display: block;
+    background-image: url(../image/pexels-gustavo-crivellari-5396940.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+div#all{
+    margin-bottom: 10px;
+}
+
+form div.campo {
+    display: block;
+    margin: 5px 0px;
+    background-color: #482161;
+    border-radius: 8px;
+/*   padding: 5px; */
+    height: 37px;
+    width: 100%;
+}
+
+div.campo input {    
+    background-color: #94cfcd;
+    border: 2px solid #482161;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 6px;
+    width: calc(100% - 44.5px);
+    transform:translateY(-12px);
+}
+
+div.campo input:focus-within{ /* quando o input estiver selecionado para digitar */
+    background-color: white;
+}
+
+div.campo > span{
+    color: white;
+
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+form label {
+    display: none;
+    font-size: 0.9em;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 0.9em;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 35px;
+    background-color: #8f47be;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form > input[type=submit]:hover {
+    background-color: #482161;
+}
+
+form > a.botao {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    height: 35px;
+    margin-top: 7px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #8f47be;
+    border:1px solid #8f47be;
+}
+
+form > a.botao p {
+    display: inline-block;
+    font-size: 0.9em;
+    transform: translateY(-3px);
+}
+
+form > a.botao:hover {
+    color: white;
+    background-color: #8f47be;
+}
+
+form > a.botao span#icon {
+    transform: translateY(4px);
+}
