@@ -1,0 +1,21 @@
+div.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+    height: 35vh;
+    /* largura para colunas */
+    grid-template-columns: 50px auto 10%;
+    /* altura para linhas */
+    grid-template-rows: 40% 60%;
+    /* espaçamento no geral */
+    gap: 5px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
